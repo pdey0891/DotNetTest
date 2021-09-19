@@ -23,7 +23,7 @@ namespace AzureSsnApi.Controllers
         public string GetSasToken()
         {
             var key = "DUYrm5lZOVfpl89CwH+YMClA8+kePDHbZXcRObWuHey3jzEcxq6PVOW+enf705qxuSUCmM5bzcSxi1TTV0niSg==";
-            var sharedKeyCredentials = new StorageSharedKeyCredential("kpteststorage", key);
+            var sharedKeyCredentials = new StorageSharedKeyCredential("kpteststorage1", key);
             var sasBuilder = new AccountSasBuilder()
             {
                 StartsOn = DateTimeOffset.UtcNow,
